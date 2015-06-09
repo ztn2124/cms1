@@ -1,0 +1,9 @@
+<?php
+
+//This is a model of user authention 
+
+class Userath extends Eloquent {
+
+
+
+}

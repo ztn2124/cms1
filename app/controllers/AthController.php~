@@ -1,0 +1,28 @@
+<?php
+
+// This is a Controller of user authention 
+
+class AthController extends BaseController {
+
+public function login() {
+
+return View::make('login');
+
+}
+
+public function check() {
+
+Input::get('un');
+Input::get('pd');
+
+// if() {
+
+// return Redirect::to
+
+return View::make('dashboard');
+
+// } // End of IF
+
+} // End of check function
+
+} // End of AthController

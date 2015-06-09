@@ -1,0 +1,35 @@
+@extends('layout')
+@section('content')
+
+<section class="header section-padding">
+<div class="background">&nbsp;</div>
+<div class="container">
+<div class="header-text">
+<h1>Learning Laravel: The Easiest Way</h1>
+<p>
+Fastest way to learn developing web applications
+<br /> using Laravel 4 framework!
+</p>
+</div>
+</div>
+</section>
+
+
+
+<div class="container">
+<section class="section-padding">
+<div class="jumbotron text-center">
+<h1>About us</h1>
+<p>
+
+
+Learning Laravel is a beginner to intermediate level book, designed for any PHP developer at all levels. The main goal of this book is to build a solid foundation for developers to build their next web applications with Laravel.
+
+
+
+</p>
+</div>
+</section>
+</div>
+
+@stop

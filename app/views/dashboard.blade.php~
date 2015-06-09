@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>User login</title>
+</head>
+<body>
+@section('content')
+
+{{ Form::open(array('url'=>'/authenticate', 'method'=>'post')) }}
+{{ Form::label('title','News Title') }}
+{{ Form::text('title') }}
+<br />
+{{ Form::label('news','News Body') }}
+{{ Form::textarea('news') }}
+<br />
+{{ Form::submit('Login') }}
+{{ Form::reset('Reset') }}
+{{ Form::close() }}
+
+@stop
+
+
+@yield('content')
+</body>
+</html>

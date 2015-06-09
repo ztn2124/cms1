@@ -1,0 +1,23 @@
+@extends('layout')
+
+@section('content')
+
+{{ Form::open(array('url'=>'authentication.php', 'method'=>'post')) }}
+
+{{ Form::label('username','provide a un') }}
+
+{{ Form::text('username') }}
+
+<br />
+
+{{ Form::label('password','provide a password') }}
+
+{{ Form::text('password') }}
+
+<br />
+
+{{ Form::submit('Login') }}
+
+{{ Form::close() }}
+
+@stop

@@ -1,0 +1,54 @@
+@extends('layout')
+@section('content')
+<section class="header section-padding">
+<div class="background">&nbsp;</div>
+<div class="container">
+<div class="header-text">
+<h1>Learning Laravel: The Easiest Way</h1>
+<p>
+This is our To-do list! <br />
+Built using Laravel 4 framework!
+</p>
+</div>
+</div>
+</section>
+
+<div class="container">
+<section class="section-padding">
+<div class="jumbotron text-center">
+
+<div class="panel panel-default">
+<div class="panel-heading">
+<h1>
+<span class="grey">Our</span> To-do List
+</h1>
+</div>
+@if ($tasks->isEmpty())
+<p> Currently, there are no news</p>
+@else
+<table class="table">
+<thead style="background: green; color: #FFFFFF">
+<tr>
+<td>#</td>
+<td>Title</td>
+<td>Body</td>
+<td>Finish</td>
+</tr>
+</thead>
+<tbody>
+
+<tr><td>{{ DB::table($tasks)->first(); }}</td></tr>
+<tr><td></td></tr>
+<td>
+
+</tbody>
+</table>
+@endif
+</div>
+
+
+</div>
+</section>
+</div>
+
+@stop

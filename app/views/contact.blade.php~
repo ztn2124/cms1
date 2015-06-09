@@ -1,0 +1,46 @@
+@extends('layout')
+@section('content')
+
+<section class="header section-padding">
+<div class="background">&nbsp;</div>
+<div class="container">
+<div class="header-text">
+<h1>Learning Laravel: The Easiest Way</h1>
+<p>
+Fastest way to learn developing web applications
+<br /> using Laravel 4 framework!
+</p>
+</div>
+</div>
+</section>
+
+
+
+<div class="container">
+<section class="section-padding">
+<div class="jumbotron text-center">
+<h1>Contact us</h1>
+<p>
+
+<span style='color:red'>{{ HTML::ul($errors->all(), array('class'=>'errors'))}}</span>
+<p>Please contact us by sending a message using the form below:</p>
+
+
+{{ Form::open(array('url' => 'contact')) }}
+{{ Form::label('subject') }}
+{{ Form::text('subject','Enter your subject') }}
+<br />
+{{ Form::label('Message') }}
+{{ Form::textarea('message','Enter your message') }}
+<br />
+{{ Form::submit() }}
+{{ Form::close() }}
+
+
+
+</p>
+</div>
+
+
+
+@stop
